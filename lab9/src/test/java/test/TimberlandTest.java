@@ -13,36 +13,36 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class TimberlandCartTest {
+public class TimberlandTest {
     private static WebDriver driver;
 
-    @BeforeMethod
-    public void setUpBrowser() {
+    @BeforeMethod(alwaysRun = true)
+    public void browserSetup() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
 
-    @Test
-    public void testAddItemToCart() {
-        driver.get("https://www.timberland.com/shop/mens-davis-square-chukka-shoes-blue-a1sf3019");
-        String EXPECTED_AMOUNT = "1";
-
-        WebElement buttonSize = new WebDriverWait(driver, Duration.ofSeconds(20))
-                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-attribute-value='7.5']")));
-
-        //        Thread.sleep(3000);
-        buttonSize.click();
-
-        WebElement buttonAddToCart = new WebDriverWait(driver, Duration.ofSeconds(5))
-                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-add-to-cart-text='Add to Cart']")));
-        buttonAddToCart.click();
-
-        WebElement amountOfProductsInCart = new WebDriverWait(driver, Duration.ofSeconds(15))
-                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@class='topnav-utility']//span[@class='topnav-cart-qty']")));
-
-        //        Thread.sleep(3000);
-        Assert.assertEquals(amountOfProductsInCart.getText(), EXPECTED_AMOUNT);
-    }
+//    @Test
+//    public void testAddItemToCart() {
+//        driver.get("https://www.timberland.com/shop/mens-davis-square-chukka-shoes-blue-a1sf3019");
+//        String EXPECTED_AMOUNT = "1";
+//
+//        WebElement buttonSize = new WebDriverWait(driver, Duration.ofSeconds(20))
+//                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-attribute-value='7.5']")));
+//
+//        //        Thread.sleep(3000);
+//        buttonSize.click();
+//
+//        WebElement buttonAddToCart = new WebDriverWait(driver, Duration.ofSeconds(5))
+//                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-add-to-cart-text='Add to Cart']")));
+//        buttonAddToCart.click();
+//
+//        WebElement amountOfProductsInCart = new WebDriverWait(driver, Duration.ofSeconds(15))
+//                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@class='topnav-utility']//span[@class='topnav-cart-qty']")));
+//
+//        //        Thread.sleep(3000);
+//        Assert.assertEquals(amountOfProductsInCart.getText(), EXPECTED_AMOUNT);
+//    }
 
     @Test
     public void testAddItemToCartWithThreadSleep() throws InterruptedException {
@@ -78,8 +78,8 @@ public class TimberlandCartTest {
         Assert.assertEquals(idOfItem.getText(), EXPECTED_ID);
     }
 
-    @AfterMethod
-    public void tearDown()  {
+    @AfterMethod(alwaysRun = true)
+    public void browserTearDown()  {
         driver.quit();
         driver = null;
     }
