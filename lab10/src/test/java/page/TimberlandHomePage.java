@@ -19,24 +19,24 @@ public class TimberlandHomePage extends AbstractPage {
     }
 
     public TimberlandHomePage openPage() {
-        driver.get(TIMBERLAND_HOME_PAGE_URL);
-        new WebDriverWait(driver, waitWebDriver)
+        webDriver.get(TIMBERLAND_HOME_PAGE_URL);
+        new WebDriverWait(webDriver, waitWebDriver)
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='searchTerm']")));
         return this;
     }
 
     public TimberlandHomePage searchForTerms(String searchQuery) {
-       new WebDriverWait(driver, waitWebDriver)
+       new WebDriverWait(webDriver, waitWebDriver)
                 .until(ExpectedConditions.visibilityOf(searchBox));
         searchBox.sendKeys(searchQuery);
         searchBox.sendKeys(Keys.ENTER);
-        return new TimberlandHomePage(driver);
+        return new TimberlandHomePage(webDriver);
     }
 
     public String getArticleOfItem() {
-        WebElement idOfItem =  new WebDriverWait(driver, waitWebDriver)
+        WebElement idOfItem =  new WebDriverWait(webDriver, waitWebDriver)
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='product-style-js']")));
-        new WebDriverWait(driver, waitWebDriver)
+        new WebDriverWait(webDriver, waitWebDriver)
                 .until(ExpectedConditions.visibilityOf(idOfItem));
         return idOfItem.getText();
     }

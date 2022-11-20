@@ -21,32 +21,32 @@ public class TimberlandItemPage extends AbstractPage{
     }
 
     public TimberlandItemPage clickSizeButton() {
-        new WebDriverWait(driver, waitWebDriver)
+        new WebDriverWait(webDriver, waitWebDriver)
                 .until(ExpectedConditions.elementToBeClickable(buttonSize));
         buttonSize.click();
         return this;
     }
 
     public TimberlandItemPage addItemToCart() {
-        new WebDriverWait(driver, waitWebDriver)
+        new WebDriverWait(webDriver, waitWebDriver)
                 .until(ExpectedConditions.elementToBeClickable(addToCartButton));
         addToCartButton.click();
         return this;
     }
 
     public String getAmountOfProducts() {
-        WebElement navigationCart = new WebDriverWait(driver, waitWebDriver)
+        WebElement navigationCart = new WebDriverWait(webDriver, waitWebDriver)
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//article[@class='topnav-minicart-content-container shopcart cart-list']")));
-        WebElement amountOfProductsInCart = new WebDriverWait(driver, waitWebDriver)
+        WebElement amountOfProductsInCart = new WebDriverWait(webDriver, waitWebDriver)
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@class='topnav-utility']//span[@class='topnav-cart-qty']")));
-        new WebDriverWait(driver, waitWebDriver)
+        new WebDriverWait(webDriver, waitWebDriver)
                 .until(ExpectedConditions.visibilityOf(navigationCart));
         return amountOfProductsInCart.getText();
     }
 
     @Override
     public TimberlandItemPage openPage() {
-        driver.get(TIMBERLAND_ITEM_PAGE_URL);
+        webDriver.get(TIMBERLAND_ITEM_PAGE_URL);
         return this;
     }
 }
