@@ -1,4 +1,4 @@
-package by.bsu.travelling.test;
+package test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
