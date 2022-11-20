@@ -14,5 +14,4 @@ public abstract class AbstractPage {
         AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, waitTimeOutInSeconds);
         PageFactory.initElements(factory, this);
     }
-
 }
