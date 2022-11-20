@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c837d93-6b21-40bb-9200-60586a57c67b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/bsu/travelling/page/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/AbstractPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/bsu/travelling/page/SearchResultPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/bsu/travelling/page/TravellingByHomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/bsu/travelling/test/TravellingBySearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/TimberlandTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="adf75b39-52cc-4192-a593-ae56ca38e709" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +16,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2HoHdxFb1wQ2r6cQxxy4abOaIlD" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2HoJECGaCGCVD4IHe6ytGVKUjjx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,33 +31,46 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TimberlandTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lab9[WebDriver]" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TimberlandTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TimberlandTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2c837d93-6b21-40bb-9200-60586a57c67b" name="Changes" comment="" />
-      <created>1668944607788</created>
+      <changelist id="adf75b39-52cc-4192-a593-ae56ca38e709" name="Changes" comment="" />
+      <created>1668945394107</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1668944607788</updated>
-      <workItem from="1668944610863" duration="264000" />
+      <updated>1668945394107</updated>
+      <workItem from="1668945399494" duration="124000" />
+      <workItem from="1668946336861" duration="618000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
