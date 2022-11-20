@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2d68261-f53e-482d-98e1-19de9135619a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/bsu/travelling/page/AbstractPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/bsu/travelling/test/TimberlandTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/by/bsu/travelling/page/AbstractPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/by/bsu/travelling/test/TimberlandTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +26,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab9[WebDriver]" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.49885058" />
@@ -48,7 +35,7 @@
   </component>
   <component name="RunManager" selected="TestNG.TimberlandTest">
     <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="lab9[WebDriver]" />
+      <module name="web-driver-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -68,20 +55,20 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
-      <module name="lab9[WebDriver]" />
+      <module name="web-driver-test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="lab9[WebDriver]" />
+      <module name="web-driver-test" />
       <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="lab9[WebDriver]" />
+      <module name="web-driver-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -94,7 +81,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="lab9[WebDriver]" />
+      <module name="web-driver-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -116,7 +103,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="Python.FlaskServer">
-      <module name="lab9[WebDriver]" />
+      <module name="web-driver-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -129,7 +116,7 @@
       <method v="2" />
     </configuration>
     <configuration name="TimberlandTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="lab9[WebDriver]" />
+      <module name="web-driver-test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -146,7 +133,7 @@
       </method>
     </configuration>
     <configuration name="TimberlandTest.testTitleSeleniumLevelSponsorsComparison" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="lab9[WebDriver]" />
+      <module name="web-driver-test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -164,7 +151,7 @@
       </method>
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="lab9[WebDriver]" />
+      <module name="web-driver-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -176,7 +163,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Autodetect">
-      <module name="lab9[WebDriver]" />
+      <module name="web-driver-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -191,7 +178,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="lab9[WebDriver]" />
+      <module name="web-driver-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -230,7 +217,8 @@
       <workItem from="1668892270973" duration="1514000" />
       <workItem from="1668899981142" duration="301000" />
       <workItem from="1668942260954" duration="351000" />
-      <workItem from="1668942690871" duration="574000" />
+      <workItem from="1668942690871" duration="538000" />
+      <workItem from="1668943272410" duration="376000" />
     </task>
     <servers />
   </component>
