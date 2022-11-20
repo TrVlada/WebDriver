@@ -21,25 +21,25 @@ public class TimberlandItemPage extends AbstractPage{
     }
 
     public TimberlandItemPage clickSizeButton() {
-        new WebDriverWait(driver, wait)
+        new WebDriverWait(driver, waitWebDriver)
                 .until(ExpectedConditions.elementToBeClickable(buttonSize));
         buttonSize.click();
         return this;
     }
 
     public TimberlandItemPage addItemToCart() {
-        new WebDriverWait(driver, wait)
+        new WebDriverWait(driver, waitWebDriver)
                 .until(ExpectedConditions.elementToBeClickable(addToCartButton));
         addToCartButton.click();
         return this;
     }
 
     public String getAmountOfProducts() {
-        WebElement navigationCart = new WebDriverWait(driver, wait)
+        WebElement navigationCart = new WebDriverWait(driver, waitWebDriver)
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//article[@class='topnav-minicart-content-container shopcart cart-list']")));
-        WebElement amountOfProductsInCart = new WebDriverWait(driver, wait)
+        WebElement amountOfProductsInCart = new WebDriverWait(driver, waitWebDriver)
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@class='topnav-utility']//span[@class='topnav-cart-qty']")));
-        new WebDriverWait(driver, wait)
+        new WebDriverWait(driver, waitWebDriver)
                 .until(ExpectedConditions.visibilityOf(navigationCart));
         return amountOfProductsInCart.getText();
     }

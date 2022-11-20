@@ -20,13 +20,13 @@ public class TimberlandHomePage extends AbstractPage {
 
     public TimberlandHomePage openPage() {
         driver.get(TIMBERLAND_HOME_PAGE_URL);
-        new WebDriverWait(driver, wait)
+        new WebDriverWait(driver, waitWebDriver)
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='searchTerm']")));
         return this;
     }
 
     public TimberlandHomePage searchForTerms(String searchQuery) {
-       new WebDriverWait(driver, wait)
+       new WebDriverWait(driver, waitWebDriver)
                 .until(ExpectedConditions.visibilityOf(searchBox));
         searchBox.sendKeys(searchQuery);
         searchBox.sendKeys(Keys.ENTER);
@@ -34,9 +34,9 @@ public class TimberlandHomePage extends AbstractPage {
     }
 
     public String getArticleOfItem() {
-        WebElement idOfItem =  new WebDriverWait(driver, wait)
+        WebElement idOfItem =  new WebDriverWait(driver, waitWebDriver)
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='product-style-js']")));
-        new WebDriverWait(driver, wait)
+        new WebDriverWait(driver, waitWebDriver)
                 .until(ExpectedConditions.visibilityOf(idOfItem));
         return idOfItem.getText();
     }
