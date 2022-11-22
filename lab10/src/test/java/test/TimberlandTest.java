@@ -23,12 +23,12 @@ public class TimberlandTest {
 
     @Test
     public void testAddItemToCart() {
-        String idOfItem = new TimberlandItemPage(driver)
+        String amountOfProducts = new TimberlandItemPage(driver)
                 .openPage()
                 .clickSizeButton()
                 .addItemToCart()
                 .getAmountOfProducts();
-        Assert.assertEquals(idOfItem, EXPECTED_AMOUNT);
+        Assert.assertEquals(amountOfProducts, EXPECTED_AMOUNT);
     }
 
     @Test
